@@ -4,6 +4,9 @@ const app = express();
 const encodingWord = 'password';
 const port = 8000;
 
+app.get('/', (req, res) => {
+  res.send('Homework - 73 home page');
+})
 
 app.get('/hello', (req, res) => {
   res.send('Hello');
